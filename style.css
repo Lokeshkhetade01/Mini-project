@@ -459,3 +459,7 @@ form .input:focus{
     animation-delay: 0.2s;
     animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+  }
