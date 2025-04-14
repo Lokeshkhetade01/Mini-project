@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.home-section{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: url("images/background-img.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+  .para-text{
+    font-size: 22px;
+  }
+  .home-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-button{
+    border-radius: 12px;
+    padding: 6px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    margin-bottom: 10px;
+  }
+  .home-button a{
+    color: white;
+  }
+ .home-button a:hover{
+    text-decoration: none;
+    color: cyan;
+ }
+  @media(min-width:400px){
+    .home-section{
+        width: 100%;
+        height: 100%;
+    }
+    .home-text{
+        font-size: 20px;
+    }
+    .para-text{
+        font-size: 20px;
+    }
+  }
+ 
+
+
+.context{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.logo{
+    text-align: center;
+    font-size: 85px;
+}
+@media(min-width:768px){
+    .main-cont{
+        height: 100%;
+        width: 100%;
+    }
+    .home-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-section p{
+        font-size: 25px;
+    }
+    .para-text{
+        font-size: 35px;
+      }
+}
+/* home footer */
+.home-footer{
+    width: 100%;
+    height: 925px;
+    /* height: 100%; */
+    margin-top: 25px;
+    /* background-color:rgba(55, 139, 139, 0.906); */
+    color: white;
+}
+.links a{
+    color: white;
+    font-size: 21px;
+}
+.links a:hover{
+    text-decoration: none;
+    color: black;
+}
+@media(min-width:768px){
+    .home-footer{
+        height: 600px;
+    }
+
+}
+@media(min-width:1024px){
+    .context{
+        color: white;
+    }
+   .home-section{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .context{
+    font-size:30px ;
+   } 
+   button a:hover{
+    text-decoration: none;
+   }
+   .home-footer{
+    height: 500px;
+   }
+   .para-text{
+    font-size: 28px;
+   }
+    
+}
+
+
+/* course-section */
+.couse-cont{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    margin-top: 25px;
+    /* height: 100%; */
+}
+
+/*contact form section */
+.form-cont{
+    margin-top: 25px;
+    width: 100%;
+    padding: 30px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color:rgba(15, 255, 243, 0.057);
+}
+@media(min-width:1024px){
+    .form-cont{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer{
+        height: 350px;
+    }
+
+}
+
+
+.contact-sec{
+    height: 100%;
+    width: 100%;
+    background-image: url("images/cs.avif");
+    background-position:right;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* font-size: 20px; */
+}
+
+form .input{
+    background-color: transparent;
+    outline: none;
+}
+form .input:focus{
+    background-color: transparent;
+    color: black;
+}
+
+/* about section start*/
+
+.header{
+    width: 100%;
+    height: 300px;
+    background-image: url("images/cat-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-text a{
+    color: white;
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.header-text a:hover{
+    color: cyan;
+}
+.header-text a span{
+    color: white;
+}
+
+
+/* box-row css */
+.box-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.card{
+    animation-name: anime;
+    animation-duration: 2.5s;
+    border: none;
+}
+@keyframes anime{
+    0%{
+        position: relative;
+        bottom: -80px;
+        
+    }
+    100%{
+        position: relative;
+        bottom: 0%;
+    }
+}
+
+
+
+
+
+/* instructor css */
+.instruct-box{
+    animation-name: box-anime;
+    animation-duration: 2.8s;
+    animation-delay: 1.1s;
+    border: none;
+}
+
+@keyframes box-anime{
+    0%{
+        position: relative;
+        bottom: -100px;
+        
+    }
+    100%{
+        position: relative;
+        bottom: 0%;
+    }
+}
+
+/* footer css */
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    /* height: 400px; */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(25, 109, 109);
+}
+.a-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24%;
+    font-size: 20px;
+}
+.a-box a{
+    color: white;
+    margin-bottom: 12px;
+}
+.a-box a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/* footer input */
+
+
+.f-box .f-input{
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+.f-box .f-submit{
+    padding: 5px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+}
+
+.contact-box i{
+    margin-bottom:22px;
+    font-size: 17px;
+}
+
+/* footer gallery */
+
+.gallery{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding:5px ;
+}
+.f-gallery{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery img{
+
+    border-radius: 5px;
+}
+
+.f-s-gallery{
+    display: flex;
+    justify-content: space-between;
+}
+.arrow{
+    background-color: white;
+    color:black;
+    position: sticky;
+    bottom:0px;
+    left: 0;
+    font-size: 50px;
+}
+/* about complete here */
+
+
+/* course-section start from here */
+
+.course-header{
+    width: 100%;
+    height: 300px;
+    background-image: url("images/cat-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course-header h1{
+    text-decoration: underline;
+    animation-name: course-head;
+    animation-duration: 2.5s;
+    animation-delay: 0.2s;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* about text animation */
+@keyframes course-head{
+    0%{
+        position: relative;
+        top: -100px;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+    }
+}
+
+
+
+/* course */
+/* course section css are specifically given from about page of instructor section all over css and animation are given from there */
+
+
+/* register form css */
+.cont-register{
+    width: 100%;
+    height: 100%;
+}
+.register-form{
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid white;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-group input{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.form-group input:focus{
+    background-color: transparent;
+}
+
+.form-group .transparent{
+    background-color: transparent;
+}
+
+
+/* about text animation */
+@keyframes text-head{
+    0%{
+        position: relative;
+        top: -110px;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+    }
+}
+
+/* .about-text h1{
+    text-decoration: underline;
+    animation-name: tex-head;
+    animation-duration: 2.8s;
+    animation-delay: 0.2s;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+@keyframes tex-head{
+    0%{
+        position: relative;
+        top: -110px;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+    }
+}
+/* placement */
+.place-section{
+    width: 100%;
+    height: 100%;
+}
+.card-top{
+    margin-top: 20px;
+}   
+/* placement animation code */
+.header-text .place-text{
+    text-decoration: underline;
+    animation-name: text-head;
+    animation-duration: 2.8s;
+    animation-delay: 0.2s;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
