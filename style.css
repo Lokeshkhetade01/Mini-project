@@ -222,7 +222,7 @@ form .input:focus{
     border: none;
 }
 
-@keyframes header-anime{
+@keyframes header-anime{   /*animation for about text of header*/
     0%{
         position: relative;
         top: -90px;
